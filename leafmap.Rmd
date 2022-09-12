@@ -1,0 +1,19 @@
+---
+title: "Leaflet Map"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Create a leaflet map object.
+```{r cars}
+library(leaflet)
+map <- leaflet() %>% addTiles()
+map %>%
+   addTiles() %>%
+   addMarkers(lat=-1.286389, lng=36.817223)
+
+```
